@@ -1,0 +1,66 @@
+html {
+  font-size: var(--baseFontSize);
+  box-sizing: border-box;
+}
+
+/* Box-sizing reset - padding is taken into account when calculating width */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--bodyFont);
+  font-weight: var(--font-weight__base);
+  line-height: var(--line-height__base);
+
+  background: var(--background);
+  color: var(--textColor);
+}
+
+p a, blockquote a {
+  color: var(--textColor);
+  text-decoration: none;
+  border-bottom: solid 2px var(--primary);
+}
+
+blockquote {
+  margin: 10px;
+  padding: 2em;
+  box-shadow: var(--shadow-3);
+}
+
+hr {
+  border-top: var(--line);
+}
+
+/* ==============================================================================
+ *                                     FORMS
+ * ==============================================================================
+ */
+
+label {
+  display: block;
+  font-size: var(--smallText);
+}
+
+input,
+textarea {
+  border: var(--line);
+  border-radius: 4px;
+  padding: 4px 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+select {
+  border: var(--line);
+}

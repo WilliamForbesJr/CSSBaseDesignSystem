@@ -1,0 +1,20 @@
+/* ==============================================================================
+ *                                     FOOTER
+ * ==============================================================================
+ */
+
+footer {
+  color: var(--greyLight);
+  background: var(--footerBackground);
+  padding: var(--containerPaddingY) var(--containerPaddingX);
+  text-align: center;
+
+  a {
+    color: var(--footerTextColor);
+  }
+
+  p {
+    margin-bottom: 0;
+    max-width: none;
+  }
+}

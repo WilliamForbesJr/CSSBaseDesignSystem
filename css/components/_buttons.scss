@@ -1,0 +1,32 @@
+/* ==============================================================================
+ *                                     BUTTONS
+ * ==============================================================================
+ */
+
+button {
+  appearance: none;
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBackground);
+  border: none;
+  border-radius: var(--borderRadius);
+  padding: 5px 25px;
+  box-shadow: var(--shadow-1);
+
+  &:hover {
+    box-shadow: var(--shadow-2);
+    transition: 0.3s ease-in-out box-shadow;
+  }
+}
+
+button[disabled] {
+  opacity: 0.4;
+}
+
+.button--small {
+  font-size: var(--smallText);
+}
+
+.button--cancel {
+  --buttonBackground: var(--danger);
+  --buttonTextColor: var(--white);
+}

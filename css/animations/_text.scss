@@ -1,0 +1,34 @@
+/* ==============================================================================
+ *                                     ANIMATIONS
+ * ==============================================================================
+ */
+
+.animate-underline > a {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-underline > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: transform 300ms;
+}
+
+.animate-underline > a:hover::before {
+  transform: scaleX(1);
+}
+
+.animate-underline--left > a::before {
+  transform-origin: top left;
+}
+
+.animate-underline--right > a::before {
+  transform-origin: top right;
+}

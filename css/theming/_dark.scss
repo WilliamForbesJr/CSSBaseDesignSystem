@@ -1,0 +1,17 @@
+/* ==============================================================================
+ *                              DARK MODE
+ * ==============================================================================
+ */
+
+.dark {
+  --background: var(--black);
+  --textColor: var(--greyLight);
+  --headerBackground: var(--greyDark);
+  --cardBackground: var(--greyDark);
+  --footerBackground: var(--greyDark);
+
+  /* OLED Display */
+  .oled {
+    --black: #000;
+  }
+}

@@ -1,0 +1,20 @@
+/* ==============================================================================
+ *                                     CARD
+ * ==============================================================================
+ */
+
+.card {
+  padding: 2em;
+  background: var(--cardBackground);
+  box-shadow: var(--shadow-3);
+  border-radius: var(--borderRadius);
+
+  /** First and last child will not have respective top/bottom margins */
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
